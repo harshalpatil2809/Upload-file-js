@@ -8,3 +8,4 @@ fileinp.addEventListener("click", function(){
 fileinp.addEventListener("change", function(detls){
     console.log(detls)
 })
+
