@@ -3,9 +3,12 @@ let fileinp = document.querySelector("div")
 
 fileinp.addEventListener("click", function(){
     file.click();
-})
+});
 
-fileinp.addEventListener("change", function(detls){
-    console.log(detls)
-})
+file.addEventListener("change", function(detls){
+    let name = detls.target.files[0].name
+    if (name){
+    fileinp.textContent = name
+    };
+});
 
